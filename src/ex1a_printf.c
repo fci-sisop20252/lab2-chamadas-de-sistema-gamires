@@ -7,7 +7,8 @@
  * 1. Compilar: gcc src/ex1a_printf.c -o ex1a_printf
  * 2. Executar: ./ex1a_printf
  * 3. Observar com strace: strace -e write ./ex1a_printf
- */
+ */strace -e write -o traces/ex1a_trace.txt ./ex1a_printf
+
 
 #include <stdio.h>
 

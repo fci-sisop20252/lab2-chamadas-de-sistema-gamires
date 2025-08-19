@@ -7,6 +7,8 @@
  * 1. Compile: gcc src/ex2_leitura.c -o ex2_leitura
  * 2. Execute: ./ex2_leitura
  * 3. Observe: strace -e open,read,close ./ex2_leitura
+ * gcc -Wall -g src/ex2_leitura.c -o ex2_leitura
+
  */
 
 #include <fcntl.h>    // Para open() e flags O_RDONLY

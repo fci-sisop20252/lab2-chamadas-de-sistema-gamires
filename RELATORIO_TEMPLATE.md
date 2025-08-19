@@ -13,19 +13,20 @@ strace -e write ./ex1b_write
 ### Análise
 
 **1. Quantas syscalls write() cada programa gerou?**
-- ex1a_printf: _____ syscalls
-- ex1b_write: _____ syscalls
+- ex1a_printf: _____ teve 9 syscalls
+- ex1b_write: _____ teve 7 syscalls
 
 **2. Por que há diferença entre printf() e write()?**
 
 ```
-[Sua análise aqui]
+printf seria um comando da linguagem c que organiza os write tendo um maior nivel de abstracao 
+write ele chama o sistema alocando resusos diretos e nao muda ele sempre faz a mesma funcao sempre  
 ```
 
 **3. Qual implementação você acha que é mais eficiente? Por quê?**
 
 ```
-[Sua análise aqui]
+mais eficiente seria o write por ele consegue ja acessar o kernel perdendo menos tempo que o printf que tem que abstrair mais 
 ```
 
 ---
